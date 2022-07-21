@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- ============Custom Style Sheet================= -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d22d8991f0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Template19</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header1">
+        <div class="nav-left">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i> </a>
+          <a href="#"><i class="fa-brands fa-google-plus-g"></i> </a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="nav-right">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+          <a href="#"><p id="cart-counter">0</p></a>
+          <a href="#"><i class="fa-solid fa-caret-right"></i>Register</a>
+          <a href="#"><i class="fa-solid fa-caret-right"></i>Login</a>
+        </div>
+      </div>
+
+      <!--------------------------------Header 2---------------------------------- -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="images/Logo19.jpg" alt=""
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Search
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Compare
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Reviews
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Users
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- ------------------------------Banner Section---------------------------------- -->
+
+    <section class="banner">
+      <div class="banner-content">
+        <p id="content-item1">best shope for car parts</p>
+        <p id="content-item2">every thing you want</p>
+        <p id="content-item3">
+          We provide our best services for our clients and always try to acheive
+          our clients trust and satisfaction
+        </p>
+        <button id="content-button">
+          Shope now &nbsp&nbsp<i
+            class="fa-solid fa-circle-arrow-right"
+            id="content-button_arrow"
+          ></i>
+        </button>
+      </div>
+    </section>
+
+    <!-------------------------------Car Accessories Section---------------------------------- -->
+    <section class="car_accessories" id="car_accessories">
+      <h1 class="heading">
+        car<span style="color: #ea2027"> Accessories</span>
+      </h1>
+
+      <div class="swiper car_accessories-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="images/sterring.jpg" alt="" />
+            <div class="content">
+              <h3>Sterring</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/car_baby-seat.jpg" alt="" />
+            <div class="content">
+              <h3>Car baby seat</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/car_door.jpg" alt="" />
+            <div class="content">
+              <h3>car door</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/car_engine.jpg" alt="" />
+            <div class="content">
+              <h3>Car Engine</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper car_accessories-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="images/car_gear.jpg" alt="" />
+            <div class="content">
+              <h3>Car gear</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/car_key.jpg" alt="" />
+            <div class="content">
+              <h3>car key</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/car_sound-system.jpg" alt="" />
+            <div class="content">
+              <h3>car sound system</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/car_stereo.jpg" alt="" />
+            <div class="content">
+              <h3>Car Stereo</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!---------------------------------Stats Banner----------------------------------->
+
+    <div class="stats-banner">
+      <div class="overlay">
+        <div class="stats-content">
+          <img src="images/001-insurance.png" alt="" />
+          <p>1238+</p>
+          <p>Total <span style="color: red"> Accessories</span></p>
+        </div>
+
+        <div class="stats-content">
+          <img src="images/002-maintenance.png" alt="" />
+          <p>1238+</p>
+          <p>Spare <span style="color: red">Parts</span></p>
+        </div>
+
+        <div class="stats-content">
+          <img src="images/003-heart.png" alt="" />
+          <p>1238+</p>
+          <p>Happy<span style="color: red"> Users</span></p>
+        </div>
+
+        <div class="stats-content">
+          <img src="images/004-earth-globe.png" alt="" />
+          <p>1238+</p>
+          <p>Expert<span style="color: red"> Workers</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------Toogel Bar section----------------------------->
+    <!-- <section class="toogle-bar">
+  
+      <div class="toogle-container">
+        <div class="container-item" id="red-item">
+          <p>Car Decoration</p>
+        </div>
+        <div class="container-item">
+          <p>Modification</p>
+        </div>
+        <div class="container-item">
+          <p>Spare Parts</p>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ------------------------Car-decoration Section------------------------------------- -->
+
+    <!-- <section class="car-decoration">
+      <div class="container">
+        <div class="card container-card">
+          <img
+            src="car_key.jpg"
+            class="card-img-top"
+            alt="Couldn't load the image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Modern car keys</h5>
+            <h8 class="card-title">$50</h8>
+          </div>
+        </div>
+
+        <div class="card container-card">
+          <img
+            src="car_sound-system.jpg"
+            class="card-img-top"
+            alt="Couldn't load the image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Sound System</h5>
+            <h8 class="card-title">$600</h8>
+          </div>
+        </div>
+
+        <div class="card container-card">
+          <img
+            src="car_engine.jpg  "
+            class="card-img-top"
+            alt="Couldn't load the image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Diesel Engine</h5>
+            <h8 class="card-title">$1000</h8>
+          </div>
+        </div>
+
+        <div class="card container-card">
+          <img
+            src="car_baby-seat.jpg"
+            class="card-img-top"
+            alt="Couldn't load the image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Baby car seat</h5>
+            <h8 class="card-title">$200</h8>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!----------------------------------Banner3------------------------------------->
+    <section class="banner-3">
+      <div class="banner3-container">
+        <div class="container-content">
+          <span style="color: red">we are since 1970</span>
+          <p>we provide what you want</p>
+        </div>
+
+        <div class="container-buttons">
+          <button class="banner3-button">Contact Us</button>
+          <button class="banner3-button">View Shop</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------Fresh Items--------------------------- -->
+
+    <section class="fresh_items">
+      <h2 id="heading1">Fresh <span style="color: red">Items</span></h2>
+      <p id="heading2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est
+        libero provident quia quae distinctio ullam hic.
+      </p>
+
+      <div class="swiper fresh_items-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="images/sterring.jpg" alt="" />
+            <div class="content">
+              <h3>Sterring</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/car_baby-seat.jpg" alt="" />
+            <div class="content">
+              <h3>Car baby seat</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/car_door.jpg" alt="" />
+            <div class="content">
+              <h3>car door</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/car_engine.jpg" alt="" />
+            <div class="content">
+              <h3>Car Engine</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$55,000/-</div>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-----------------------------FeedBack Section------------------------->
+
+    <section class="feedback-section">
+      <div class="feedback" id="feedback">
+        <div class="swiper feedback-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box" style="padding: 3rem 2rem">
+              <div class="content">
+                <h3 style="font-size: 2rem; padding-bottom: 1.5rem">
+                  VERY QUICK AND FAST SUPPORT
+                </h3>
+                <p style="font-size: 1.5rem">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+                  fugit aliquam repellendus suscipit cum non!
+                </p>
+              </div>
+
+              <div class="user">
+                <img style="height: 10rem" src="images/pic-1.png" alt="" />
+
+                <span
+                  style="
+                    font-size: 2rem;
+                    font-weight: bold;
+                    display: block;
+                    text-align: start;
+                  "
+                  >john jacob <i class="fa-solid fa-quote-right"></i
+                ></span>
+
+                <span
+                  style="font-size: 1.5rem; display: block; text-align: start"
+                  >CEP Pvt.Inc</span
+                >
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide box" style="padding: 3rem 2rem">
+              <div class="content">
+                <h3 style="font-size: 2rem; padding-bottom: 1.5rem">
+                  VERY QUICK AND FAST SUPPORT
+                </h3>
+                <p style="font-size: 1.5rem">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+                  fugit aliquam repellendus suscipit cum non!
+                </p>
+              </div>
+
+              <div class="user">
+                <img style="height: 10rem" src="images/pic-2.png" alt="" />
+
+                <span
+                  style="
+                    font-size: 2rem;
+                    font-weight: bold;
+                    display: block;
+                    text-align: start;
+                  "
+                  >john jacob <i class="fa-solid fa-quote-right"></i
+                ></span>
+
+                <span
+                  style="font-size: 1.5rem; display: block; text-align: start"
+                  >CEP Pvt.Inc</span
+                >
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide box" style="padding: 3rem 2rem">
+              <div class="content">
+                <h3 style="font-size: 2rem; padding-bottom: 1.5rem">
+                  VERY QUICK AND FAST SUPPORT
+                </h3>
+                <p style="font-size: 1.5rem">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+                  fugit aliquam repellendus suscipit cum non!
+                </p>
+              </div>
+
+              <div class="user">
+                <img style="height: 10rem" src="images/pic-3.png" alt="" />
+
+                <span
+                  style="
+                    font-size: 2rem;
+                    font-weight: bold;
+                    display: block;
+                    text-align: start;
+                  "
+                  >john jacob <i class="fa-solid fa-quote-right"></i
+                ></span>
+
+                <span
+                  style="font-size: 1.5rem; display: block; text-align: start"
+                  >CEP Pvt.Inc</span
+                >
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide box" style="padding: 3rem 2rem">
+              <div class="content">
+                <h3 style="font-size: 2rem; padding-bottom: 1.5rem">
+                  VERY QUICK AND FAST SUPPORT
+                </h3>
+                <p style="font-size: 1.5rem">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+                  fugit aliquam repellendus suscipit cum non!
+                </p>
+              </div>
+
+              <div class="user">
+                <img style="height: 10rem" src="images/pic-4.png" alt="" />
+
+                <span
+                  style="
+                    font-size: 2rem;
+                    font-weight: bold;
+                    display: block;
+                    text-align: start;
+                  "
+                  >john jacob <i class="fa-solid fa-quote-right"></i
+                ></span>
+
+                <span
+                  style="font-size: 1.5rem; display: block; text-align: start"
+                  >CEP Pvt.Inc</span
+                >
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------Blog post-------------------------- -->
+    <section class="latestblog">
+
+      <div class="blog-container">
+
+        <div class="latestblog-header">
+          <h1>Latest <span style="color: red">Blog</span> Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            reiciendis velit eius voluptate consequuntur fugit.
+          </p>
+        </div>
+  
+        <div class="blogpost">
+
+          <div class="blogpost-item">
+            <h4>Photo Not Available</h3>
+            <img id="camera" src="images/camera.png" alt="Counldn't Load the image" />
+            <img id="post-profile" src="images/DP.jpg" alt="Counldn't Load the image" />
+            <span>June 30,2017</span>
+            <span>0 Comments</span>
+            <p id="item-content">Ford focus production for north america will cease for a year</p>
+          </div>
+  
+          <div class="blogpost-item">
+            <h4>Photo Not Available</h3>
+            <img id="camera" src="images/camera.png" alt="Counldn't Load the image" />
+            <img id="post-profile" src="images/DP.jpg" alt="Counldn't Load the image" />
+            <span>June 30,2017</span>
+            <span>0 Comments</span>
+            <p id="item-content">Ford focus production for north america will cease for a year</p>
+          </div>
+  
+          <div class="blogpost-item">
+            <h4>Photo Not Available</h3>
+            <img id="camera" src="images/camera.png" alt="Counldn't Load the image" />
+            <img id="post-profile" src="images/DP.jpg" alt="Counldn't Load the image" />
+            <span>June 30,2017</span>
+            <span>0 Comments</span>
+            <p id="item-content">Ford focus production for north america will cease for a year</p>
+          </div>
+  
+      
+
+        </div>
+      </div>
+      
+    </section>
+
+    <!--------------------------------Clients----------------------------- -->
+    <section class="clients">
+      <div class="clients-container">
+        <div class="container-content">
+          <p id="p1">Why Choose Us</p>
+          <p id="p2">OUR PREMIUM CLIENTS</p>
+        </div>
+
+        <div class="container-img">
+          <img src="images/client-1.png" alt="" />
+          <img src="images/client-2.png" alt="" />
+          <img src="images/client-1.png" alt="" />
+          <img src="images/client-2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------Footer------------------------------ -->
+    <section class="footer">
+      <div class="footer-container">
+
+        <div class="holder1">
+
+            <div class="about">
+            <a href="#"><img src="images/Logo19.jpg" alt=""></a> 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit veritatis, libero ipsam aliquid quod corrupti?</p>
+            <a href="#"><img class="footer-image" src="images/google_play.png" alt="Couldn't Load image"></a>
+            <a href="#"><img class="footer-image" src="images/app_store.png" alt="Couldn't Load image"></a>
+            </div>
+  
+            <div class="follow">
+            <h2>Follow Us</h2>
+            <a href="#"><img src="images/facebook.png" alt="Couldn't Load image"> Facebook</a>
+            <a href="#"><img src="images/twitter.png" alt="Couldn't Load image"> Twitter<a>
+            <a href="#"><img src="images/linkedin.png" alt="Couldn't Load image"> Linkedin</a>
+            <a href="#"><img src="images/google-plus.png" alt="Couldn't Load image"> Google</a>
+            <a href="#"><img src="images/youtube.png" alt="Couldn't Load image"> YouTube</a>
+            </div>
+
+        </div>
+      
+        <div class="holder2">
+            <div class="quicklinks">
+            <h2>Quick Links</h2>
+            <a href="#"><i class="fas fa-angle-right"> </i>About Us</a>
+            <a href="#"><i class="fas fa-angle-right"> </i>Our services</a>
+            <a href="#"><i class="fas fa-angle-right"> </i>Blog</a>
+            <a href="#"><i class="fas fa-angle-right"> </i>Support Center</a>
+            </div>
+
+            <div class="signup">
+            <h2>Signup For Weekly Newsletter</h2>
+            <p>We may send you information about related events,webinars,products and services which we believe</p>
+            <input type="email" placeholder="Enter your email here..">
+            <input type="submit" value="Submit">
+            <p>Copyright 2017 © theme created by <span style="color: red;">Vedant</span> All rights reserved </p>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-------------------------------UpButton-------------------------------- -->
+    <button id="btn-scrollUp">
+      <i class="fa-solid fa-arrow-up-long"></i>
+    </button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d22d8991f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
