@@ -1,16 +1,15 @@
-
 var swiper = new Swiper(".car_accessories-slider", {
   grabCursor: true,
-  centeredSlides: true,  
+  centeredSlides: true,
   spaceBetween: 20,
-  loop:true,
+  loop: true,
   autoplay: {
     delay: 9500,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable:true,
+    clickable: true,
   },
   breakpoints: {
     0: {
@@ -29,16 +28,16 @@ var swiper = new Swiper(".car_accessories-slider", {
 
 var swiper = new Swiper(".fresh_items-slider", {
   grabCursor: true,
-  centeredSlides: true,  
+  centeredSlides: true,
   spaceBetween: 20,
-  loop:true,
+  loop: true,
   autoplay: {
     delay: 9500,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable:true,
+    clickable: true,
   },
   breakpoints: {
     0: {
@@ -55,13 +54,13 @@ var swiper = new Swiper(".fresh_items-slider", {
 // --------------------------- Feedback----------------
 var swiper = new Swiper(".feedback-slider", {
   grabCursor: true,
-  centeredSlides: true,  
+  centeredSlides: true,
   spaceBetween: 20,
-  loop:true,
- 
+  loop: true,
+
   pagination: {
     el: ".swiper-pagination",
-    clickable:true,
+    clickable: true,
   },
   breakpoints: {
     0: {
@@ -76,18 +75,16 @@ var swiper = new Swiper(".feedback-slider", {
   },
 });
 
-
-
 let scrollUp = document.getElementById("btn-scrollUp");
-      scrollUp.addEventListener("click", function () {
-        window.scrollTo(0, 0);
-      });
+scrollUp.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
 
-      window.onscroll = function () {
-        if (window.scrollY > 60) {
-          console.log(window.scrollY);
-          scrollUp.classList.add("display");
-        } else {
-          scrollUp.classList.remove("display");
-        } 
-      };
+window.onscroll = function () {
+  if (window.scrollY > 60) {
+    console.log(window.scrollY);
+    scrollUp.classList.add("display");
+  } else {
+    scrollUp.classList.remove("display");
+  }
+};

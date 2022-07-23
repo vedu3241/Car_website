@@ -18,7 +18,7 @@
     transition: .2s linear;
   }
 
-.btn{
+.swiper .btn{
     display: inline-block;
     margin-top: 1rem;
     padding:.8rem 3rem;
@@ -31,7 +31,7 @@
     text-align: center;
 }
 
-.btn:hover{
+.swiper  .btn:hover{
     background:var(--yellow);
 }
 
@@ -182,10 +182,12 @@ header nav img{
     
 }
 /* -----Section Car_acc-------- */
+
 .car_acc{
     background-color: rgba(239, 233, 233, 0.96);
     /* padding-bottom: 6.4rem; */
 }
+
 #acc-heading{
     font-family: sans-serif;
     padding-top: 1.6rem;
@@ -194,23 +196,14 @@ header nav img{
     font-size: 3.5rem;
     text-align: center;
 }
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 35.2rem;
-    padding-top: 3.2rem;
-    max-width: 107.8rem !important;
-}
-.container-card{
-    width: 24.0rem;
-}
+
 .card-img-top{
     height: 20rem;
 }
 .card-title{
     font-size: 2rem;
 }
+
 /* ------stats Banner----- */
 
 
@@ -251,27 +244,98 @@ header nav img{
 
 /* --------------------car decoraion----------- */
 
-.car-decoration{
-    /* padding-top: 16rem; */
-    background-color: rgba(239, 233, 233, 0.96);
-}
+.car-decoration .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding:25px 20px;
+  }
+  
+  .car-decoration .container .heading{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:#334;
+  }
+  
+  .car-decoration .container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:20px;
+  }
+  
+  .car-decoration .container .box-container .box{
+    background-color: #fff;
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  }
+
+  .car-decoration .container .box-container .box .image{
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 5px;
+ 
+  }
+  
+  .car-decoration .container .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  
+  .car-decoration .container .box-container .box:hover .image img{
+    transform: scale(1.1);
+  }
+  .car-decoration .container .box-container .box .content{
+    text-align: start;
+  }
+  .car-decoration .container .box-container .box .content h3{
+    font-size: 20px;
+    color:#334;
+  }
+  
+  .car-decoration .container .box-container .box .content p{
+    font-size: 15px;
+    color:#777;
+    line-height: 1.6;
+    padding:15px 0;
+  }
+  .car-decoration .container .box-container .box .content .rating-stars{
+    margin-bottom: 1rem;
+  }
+  .car-decoration .container .box-container .box .content .btn{
+    display: inline-block;
+    padding:10px 30px;
+    border:1px solid #334;
+    color:#334;
+    font-size: 16px;
+  }
+  
+  .car-decoration .container .box-container .box .content .btn:hover{
+    background-color: crimson;
+    border-color: crimson;
+    color:#fff;
+  }
+  .car-decoration .rating-stars .fa-star{
+    color: black;
+  }
 
 /* ---------------------toogle bar------------------- */
 .toogle-bar{
-    background-color: rgba(239, 233, 233, 0.96);
+    /* background-color: rgba(239, 233, 233, 0.96); */
     padding-top: 3.2rem;
 }
 .toogle-bar .toogle-container{
     display: flex;
-    /* justify-content: center;  */
     background-color: white;
     max-width: 50.0rem;
     width: 50%;
     border-radius: 3.0rem;
     align-items: center;
     margin-left: 32%;
-   
 }
+
 .toogle-bar .toogle-container p{
     margin: 0;
     color: black;
@@ -288,6 +352,10 @@ font-weight: 500;
     background-color: #EA2027;
     color: white;
 }
+
+
+
+
 /* -------------------Banner 3------------------- */
 .banner-3{
     width: 100%;
@@ -402,9 +470,10 @@ font-weight: 500;
 
 .feedback-section .feedback .swiper-wrapper .box{
     background-color: white ;
-    height: 30rem;
+    /* height: 30rem; */
 
 }
+
 
 .feedback-section .feedback{
     padding: 4.5rem 4rem;
@@ -865,4 +934,23 @@ font-weight: 500;
     .clients .container-img{
         margin-left: 0;
     }
+
+    /* -----------car decoration----------- */
+    .container .heading{
+        font-size: 25px;
+      }
+    
+      .container .box-container{
+        grid-template-columns: 1fr;
+      }
+    
+      .container .box-container .box .image{
+        height: 200px;
+      }
+    
+      .container .box-container .box .content p{
+        font-size: 12px;
+      }
+
+
 }
