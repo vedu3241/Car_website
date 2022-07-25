@@ -38,6 +38,7 @@
 /* --------------------------------- */
 html{
     font-size: 62.5%;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 
@@ -181,28 +182,57 @@ header nav img{
     background-color: #EA2027;
     
 }
-/* -----Section Car_acc-------- */
 
-.car_acc{
-    background-color: rgba(239, 233, 233, 0.96);
-    /* padding-bottom: 6.4rem; */
+/* ------------------Car Accessories------------ */
+.car_accessories {
+    margin-top: 2.5rem;
 }
-
-#acc-heading{
-    font-family: sans-serif;
-    padding-top: 1.6rem;
-    margin: 0;
-    font-weight: 650;
-    font-size: 3.5rem;
+.car_accessories .heading{
     text-align: center;
+    font-size: 3rem;
 }
 
-.card-img-top{
-    height: 20rem;
+.car_accessories .car_accessories-slider{
+    padding:1rem;
+    padding-bottom: 4rem;
 }
-.card-title{
-    font-size: 2rem;
+
+.car_accessories .car_accessories-slider .box{
+    padding:2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    border-radius: .5rem;
 }
+
+.car_accessories .car_accessories-slider .box img{
+    height: 15rem;
+}
+
+.car_accessories .car_accessories-slider .box:hover img{
+    transform: scale(.9);
+}
+
+.car_accessories .car_accessories-slider .box .content h3{
+    font-size: 2.2rem;
+    color:var(--black);
+}
+
+.car_accessories .car_accessories-slider .box .content .stars{
+    padding:1rem 0;
+}
+
+.car_accessories .car_accessories-slider .box .content .stars i{
+    font-size: 1.7rem;
+    color:var(--yellow);
+}
+
+.car_accessories .car_accessories-slider .box .content .price{
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+
 
 /* ------stats Banner----- */
 
@@ -211,8 +241,9 @@ header nav img{
     background-image: url(images/banner-stats.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 2.5rem;
 }
-.overlay{
+.stats-container{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -242,116 +273,110 @@ header nav img{
 }
 
 
-/* --------------------car decoraion----------- */
+/* --------------------Toogle Section----------- */
+.toogle-section {
+    margin-top: 2.5rem;
+}
 
-.car-decoration .container{
-    max-width: 1200px;
-    margin: 0 auto;
+.buttons{
     text-align: center;
-    padding:25px 20px;
-  }
-  
-  .car-decoration .container .heading{
-    font-size: 40px;
-    margin-bottom: 20px;
-    color:#334;
-  }
-  
-  .car-decoration .container .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap:20px;
-  }
-  
-  .car-decoration .container .box-container .box{
-    background-color: #fff;
-    padding:20px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-  }
+    /* margin-top: 2rem; */
+}
+.btn-group{
+    border-radius: 30rem;
+    border: 1px solid black ;
+}
+.btn-primary{
+   border-radius: 30rem;
+   border-color: white;
+   background-color: white;
+   font-size: 1.8rem;
+   color: black;
+   box-shadow: 0 0 .8 1 black;
 
-  .car-decoration .container .box-container .box .image{
-    margin-bottom: 20px;
-    overflow: hidden;
-    height: 250px;
-    border-radius: 5px;
+}
+.btn-group .btn-primary:hover{
+    box-shadow: 0 0 7px 0px #222;
+}
+
+ .btn-primary:focus{
+    background-color: red;
+ }
+ .btn-primary:hover{
+    background-color: red;
+    border-color: red;
+ }
+
+.toogle-section .toogle-container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 3rem 2rem;
+ }
  
-  }
-  
-  .car-decoration .container .box-container .box .image img{
-    height: 100%;
-    object-fit: cover;
-  
-  }
-  
-  .car-decoration .container .box-container .box:hover .image img{
-    transform: scale(1.1);
-  }
-  .car-decoration .container .box-container .box .content{
+ .toogle-section .toogle-container .title{
+    font-size: 3.5rem;
+    color:#444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+ }
+ 
+.toogle-section .toogle-container .products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+ }
+ 
+.toogle-section .toogle-container .products-container .product{
     text-align: start;
-  }
-  .car-decoration .container .box-container .box .content h3{
-    font-size: 20px;
-    color:#334;
-  }
-  
-  .car-decoration .container .box-container .box .content p{
-    font-size: 15px;
-    color:#777;
-    line-height: 1.6;
-    padding:15px 0;
-  }
-  .car-decoration .container .box-container .box .content .rating-stars{
-    margin-bottom: 1rem;
-  }
-  .car-decoration .container .box-container .box .content .btn{
-    display: inline-block;
-    padding:10px 30px;
-    border:1px solid #334;
-    color:#334;
-    font-size: 16px;
-  }
-  
-  .car-decoration .container .box-container .box .content .btn:hover{
-    background-color: crimson;
-    border-color: crimson;
-    color:#fff;
-  }
-  .car-decoration .rating-stars .fa-star{
-    color: black;
-  }
+    padding:3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+ }
+ 
+ .toogle-section .toogle-container .products-container .product:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+ }
+ 
+ .toogle-section  .toogle-container .products-container .product img{
+    height: 25rem;
+ }
+ 
+ .toogle-section .toogle-container .products-container .product:hover img{
+    transform: scale(.9);
+ }
+ 
+ .toogle-section .toogle-container .products-container .product h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#444;
+ }
+ 
+ .toogle-section .toogle-container .products-container .product:hover h3{
+    color: #ff4d4d;
+ }
 
-/* ---------------------toogle bar------------------- */
-.toogle-bar{
-    /* background-color: rgba(239, 233, 233, 0.96); */
-    padding-top: 3.2rem;
-}
-.toogle-bar .toogle-container{
-    display: flex;
-    background-color: white;
-    max-width: 50.0rem;
-    width: 50%;
-    border-radius: 3.0rem;
-    align-items: center;
-    margin-left: 32%;
-}
+ .toogle-section .toogle-container .products-container .product p{
+    font-size: 1.5rem;
+ }
 
-.toogle-bar .toogle-container p{
-    margin: 0;
+
+ .toogle-section .toogle-container .products-container .product .rating-stars .fa-solid{
+    font-size: 1.2rem;
     color: black;
-}
-.toogle-bar .container-item{
-padding: .96rem 0;
-border-radius: 3.0rem;
-width: 16.0rem;
-text-align: center;
-font-size: 1.5rem;
-font-weight: 500;
-}
-#red-item {              /*doubt*/
-    background-color: #EA2027;
-    color: white;
-}
+ }
+ 
+ .toogle-section .toogle-container .products-container .product .price{
+    font-size: 2rem;
+    color:#444;
+ }
+ 
+
+
 
 
 
@@ -402,9 +427,11 @@ font-weight: 500;
     background-color: #EA2027;
     border-color: #EA2027;
 }
+
 /* ---------------Fresh Items----------- */
 .fresh_items{
-    padding-top: 3.2rem;
+    padding-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 .fresh_items #heading1{
@@ -461,29 +488,26 @@ font-weight: 500;
 /* -------------------Feedback Section-------------------- */
 
 .feedback-section{
-    width: 100%;
-    height: 65vh;
-    background-image: url(images/feedback-bg.jpg);
-    background-size: cover;
-    margin-top: 3.2rem;
+   margin-top: 2rem;
 }
-
-.feedback-section .feedback .swiper-wrapper .box{
-    background-color: white ;
-    /* height: 30rem; */
-
-}
-
 
 .feedback-section .feedback{
-    padding: 4.5rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/feedback-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+    padding: 1rem 5rem;
 }
+
 .feedback .feedback-slider{
     padding:1rem;
-    padding-bottom: 4rem;
 }
 
 .feedback .feedback-slider .box{
+    background-color: #fff;
     padding:2rem;
     text-align: center;
     box-shadow: var(--box-shadow);
@@ -765,55 +789,14 @@ font-weight: 500;
     display: block;
   }
 
-/* ------------------Car Accessories------------ */
-.car_accessories .heading{
-    text-align: center;
-    font-size: 3rem;
-}
 
-.car_accessories .car_accessories-slider{
-    padding:1rem;
-    padding-bottom: 4rem;
-}
-
-.car_accessories .car_accessories-slider .box{
-    padding:2rem;
-    text-align: center;
-    box-shadow: var(--box-shadow);
-    border:var(--border);
-    border-radius: .5rem;
-}
-
-.car_accessories .car_accessories-slider .box img{
-    height: 15rem;
-}
-
-.car_accessories .car_accessories-slider .box:hover img{
-    transform: scale(.9);
-}
-
-.car_accessories .car_accessories-slider .box .content h3{
-    font-size: 2.2rem;
-    color:var(--black);
-}
-
-.car_accessories .car_accessories-slider .box .content .stars{
-    padding:1rem 0;
-}
-
-.car_accessories .car_accessories-slider .box .content .stars i{
-    font-size: 1.7rem;
-    color:var(--yellow);
-}
-
-.car_accessories .car_accessories-slider .box .content .price{
-    font-size: 2.5rem;
-    color:var(--black);
-}
 
 /* ------------------End-------- */
 
 
+
+
+ 
 
 
 
@@ -892,7 +875,7 @@ font-weight: 500;
         padding-left: 0;
     }
     /* -------stats-banner----------- */
-    .stats-banner .overlay{
+    .stats-banner .stats-container{
         width: 50rem;
     }
     .stats-content{
@@ -951,6 +934,8 @@ font-weight: 500;
       .container .box-container .box .content p{
         font-size: 12px;
       }
-
+      .feedback-section .feedback{
+        padding: 8.5rem 4rem;
+      }
 
 }
