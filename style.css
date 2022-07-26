@@ -115,7 +115,7 @@ header nav img{
     background-color: white;
 }
 .container-fluid .navbar-collapse{
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
     font-size: 1.7rem;
 }
 .header2 ul li a{
@@ -797,7 +797,9 @@ header nav img{
 
 
  
-
+.navbar-toggler{
+    float: left;
+}
 
 
 
