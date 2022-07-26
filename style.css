@@ -300,11 +300,11 @@ header nav img{
 }
 
  .btn-primary:focus{
-    background-color: red;
+    background-color: #EA2027;
  }
  .btn-primary:hover{
-    background-color: red;
-    border-color: red;
+    background-color: #EA2027;
+    border-color: #EA2027;
  }
 
 .toogle-section .toogle-container{
@@ -938,4 +938,15 @@ header nav img{
         padding: 8.5rem 4rem;
       }
 
+}
+@media (max-width: 370px){
+
+.banner .banner-content{
+    padding-right: 1rem;
+}
+}
+@media (max-width: 328px){
+.banner-content #content-item2{
+    text-align: center;
+}
 }
